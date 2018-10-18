@@ -11,3 +11,5 @@
   - `sequelize migration:create --name create-log-trace`
   - `sequelize migration:create --name create-users`
   - `sequelize migration:create --name create-activity`
+  - `yarn add hapi-pagination`
+  - `yarn add jsonwebtoken`
