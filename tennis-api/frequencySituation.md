@@ -74,3 +74,20 @@ typeof a === 'function' && Object.toString.call(a).indexOf('async') === 0
 // 多为无效
 a.constructor instanceof AsyncFunction
 ```
+
+## 业务逻辑
+
+需要 acl 权限控制
+
+## 界面优化
+
+loading 状态展示时机
+
+## 添加 dockerfile
+
+## 添加 websocket
+
+可选方案 nes、 ws、 faye-websocket、 socket.io
+其中，socket.io 有别人写出来的 client-mp。
+今天我看了一下, 手动打个补丁也挺简单的
+最终使用 hapijs/nes. 改造过程：[gist](https://gist.github.com/songlairui/143017c388e175fcb7cc4096ba3a5b90#gistcomment-2750344)
